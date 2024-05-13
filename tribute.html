@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+<main id="main">
+    <h1 id="title">Elon Musk</h1>
+
+    <div id="img-div">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Elon_Musk_Colorado_2022_%28cropped2%29.jpg"id="image"/>
+        <figcaption id="img-caption">Chief Executive Officer Elon Musk </figcaption>
+   
+   </div>
+   <h2> Elon Musks life:</h2>
+    <p id="tribute-info">Elon Reeve Musk is a businessman </br>and investor.CEO, product architect.</p>
+    <h3> A glimpse of his life:</h3>
+
+    <p id="info">
+      <span>2004</span>, Musk became an early investor in electric vehicle manufacturer Tesla Motors, Inc. (later Tesla, Inc.). </br>
+      He became the company's chairman and product architect, assuming the position of CEO </br> </br>in
+      <span>2006</span>.   
+     , Musk helped create SolarCity, a solar-energy company that was acquired by Tesla 
+      </br>  </br>in <span>2016</span> and became Tesla Energy. 
+      </br>  </br>
+      In <span>2013</span>, he proposed a hyperloop high-speed vactrain transportation system.   </br>  </br> In <span>2015</span>, he co-founded OpenAI, 
+    </p>
+     <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Elon_Musk#">to see more about him</a>
+
+</main>
+
+CSS
+  <style>
+*{
+  
+  box-sizing:border-box;
+}
+body{
+  background-color:#11295c;
+}
+#main{
+text-align:center;
+align-items:center;
+
+  justify-content:space-between;
+  
+  color:white;
+}
+#title,h2,p{
+  margin:10px;
+}
+#info{
+  padding:20px;
+  text-align:center;
+  justify-content:start;
+  align-items:start;
+  color:black;
+  background:#e6e6e6;
+}
+h2{
+
+}
+#img-div{
+  display:flex;
+  /* justify-content:center; */
+   flex-direction: column;
+  align-items:center;
+  overflow: hidden;
+  /* text-align: center; */
+ /* position:relative; */
+}
+#img-caption{
+ font-style:italic;
+ font-size:10px;
+}
+p{
+  font-size:14px;
+}
+
+img{
+ width:300px; 
+max-width:100%;
+padding:10px;
+border-radius:40%;
+  height: auto;
+  /* position:absolute;
+  top:50%;
+  left:50%; */
+
+  
+}
+a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  text-transform:capitalize;
+}
+span{
+  font-weight:bold;
+  text-transform:capitalize;
+}
+</style>
+</body>
+</html>
