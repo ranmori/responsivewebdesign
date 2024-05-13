@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ 
+</head>
+<body>
+  <header>
+      <div></div>
+    <nav class="navbar" id="navbar">
+    
+      <a id="nav-link" href="#about">About</a>
+      <a id="nav-link" href="#projects">Work</a>
+      <a id="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+ <main id="welcome-section">
+   <h1>Hello There I am </br> <span>Me</span></h1>
+   
+ </main>
+ <section id="projects">
+   <h3 class ="project-tile">
+     these are mi projects
+   </h3>
+   <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank"><div id="links">
+     </img id="image" src="https://www.pexels.com/photo/a-white-rose-with-a-white-ribbon-on-a-white-surface-23440279/">
+     <p>tribute image</p>
+   </div></a>
+ </section>
+ <section id="contact"
+ >
+   <a target="_blank" href=""id="profile-link"><i class="fa fa-github">my github</i></a>
+   <a target"_blank" href=""id="profile-link"><i class="fa fa-github">my github</i></a>
+ </section>
+ <footer>
+   <p>bye bye</p>
+ </footer>
+  <style>
+    *{
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  min-height : 100vh;
+   display: flex;
+    flex-direction: column;
+}
+header{
+  display:grid;
+grid-template-columns:50% 20%;
+  justify-content:end;
+  
+  position:sticky;
+  top:0;
+  padding:10px;
+  background-color:lightblue;
+  color:black;
+  margin:0;
+
+}
+nav{
+  align-items:center;
+}
+nav-link{
+  padding:10px;
+}
+a{
+  text-decoration:none;
+  color:black;
+
+  
+}
+#welcome-section{
+  align-items:center;
+  padding:100px;
+  color:white;
+  text-align:center;
+  background-color:black;
+}
+span{
+  color:aliceblue;
+}
+h3{
+  text-align:center;
+  padding:20px;
+}
+#links{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+#profile-link{
+  display:flex;
+  text-align:center;
+  align-items:center;
+  justify-content:space-between;
+}
+footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:black;
+  color:white;
+  padding:10px;
+     margin-top: auto;
+  
+}
+img{
+  width:100%;
+  
+}
+#contact{
+  display:flex;
+   padding:20px;
+   align-items:center;
+  justify-content:center;
+}
+@media only screen and (max-width:768px){
+  img{
+    width:50%;
+  }
+
+}
+  </style>
+  </body>
+</html>
