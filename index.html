@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+     <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+<div class="container">
+        <h1 id="title">survey forum</h1>
+        <p id="description">this is it</p>
+
+        <form action="" id="survey-form">
+             
+           <label id="name-label">Name <input type="name" name="" id="name" placeholder="Enter Your name" required></label>
+           <label id="email-label"> Email <input type="email" name="" id="email" placeholder="Enter your email" required></label>
+          
+           <label id="number-label"> Age
+            <input type="number" name="" id="number" min="1" max="10" placeholder="number"></label>
+              <p>are you and idiot</p>
+
+              <select id="dropdown">
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <p>how is life</p>
+          <label for="">good <input type="radio" value="yes" name="yah"></input><input type="radio" value="yes" name="yah"></input></label>
+           <label for="">bad <input type="radio" value="No" name="nah"></input><input type="radio" value="No" name="nah"></input></label> 
+           <input type="checkbox" value="first" name="first-name"></input>
+           <input type="checkbox" value="second" name="second-name"></input>
+           <input type="submit" value="submit" id="submit"></input> 
+           <textarea>write something</textarea>
+           
+            
+        </form>
+
+    </div>
+    </body>
+  </html>
+<!--css  -->
+<style>
+  *{
+
+box-sizing:border-box;
+}
+.container{
+  display:flex;
+ align-items:center;
+ flex-direction:column;
+ justify-content:space-between;
+ background-color:teal;
+ color:white;
+}
+#survey-form{
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+  padding:20px;
+  justify-content:space-between;
+  
+}
+input{
+  padding:10px;
+  border:none;
+  border-radius:2px;
+  margin:5px;
+  width:100%;
+}
+input[type=submit]{
+  color:white;
+  background-color:black;
+}
+input[type=checkbox]{
+
+}
+p,h1{
+  text-align:center;
+   text-transform: capitalize;
+   
+}
+p{
+  font-size:24px;
+}
+#dropdown{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+option{
+  border-radius:2px;
+  width:100%;
+  border:none;
+  padding:20px;
+  margin:4px;
+}
+textarea{
+  padding:20px;
+  margin:2px;
+  border-radius:5px;
+  width:100%;
+
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 10px;
+  border: 0.25rem solid white;
+  border-radius: 0.5rem;
+}
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0 10px;
+  width: 1.15em;
+  padding:2px;
+  height: 1px;
+  border: 1px solid white;
+  border-radius: 20%;
+  
+}
+/* label{
+  padding:0px;
+} */
+input[type="radio"] {
+  /* ...existing styles */
+
+  display: grid;
+  place-content: center;
+}
+</style>
